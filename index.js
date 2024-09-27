@@ -9,6 +9,8 @@ function renderPasswords(){
     password2el.textContent = generateRandomPassword();
 }
 
+window.renderPasswords = renderPasswords;
+
 function generateRandomPassword() {
     let password = "";
     for(let i = 0; i < 15; i++){
@@ -17,3 +19,5 @@ function generateRandomPassword() {
     }
     return password;
 }
+
+window.generateRandomPassword = renderPasswords;
